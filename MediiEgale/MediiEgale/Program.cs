@@ -37,7 +37,6 @@ namespace MediiEgale
 
             // daca A contine media ca si element -> OK
             //  conform calculelor de mai sus, si media restului elementelor este egala cu media lui A
-            double sum = nums.Sum();
             double average = nums.Average();
             if (nums.Contains(average))
             {
@@ -102,7 +101,6 @@ namespace MediiEgale
                 }
             }
 
-            // daca ajungem aici, capetele vectorului au fost depasite si nu am gasit nicio subsecventa cu proprietarea ceruta -> Fals
             return false;
         }
     }
