@@ -51,6 +51,7 @@ namespace MediiEgale
             //   si anume cel mai mare numar mai mic decat media + cel de la pozitia urmatoare (am facut sortarea, deci acest lucru este garantat)
             int lower = nums.FindLastIndex(x => x < average);
             int upper = lower + 1;
+
             // Media de start
             double iterAvg = (nums[lower] + nums[upper]) / 2;
             while (lower >= 0 && upper < nums.Count)
